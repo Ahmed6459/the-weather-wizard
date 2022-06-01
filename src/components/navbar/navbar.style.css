@@ -1,0 +1,22 @@
+.navbar {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-title p{
+    color: blanchedalmond;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+}
+.logo-img img{
+    width: 100px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

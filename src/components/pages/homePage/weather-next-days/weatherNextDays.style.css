@@ -1,0 +1,28 @@
+.weather-next-days-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.weather-next-days{
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    .weather-next-days-container{
+        flex-wrap: wrap;
+        justify-content: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .weather-next-days{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .weather-next-days{
+        width: 100%;
+    }
+}

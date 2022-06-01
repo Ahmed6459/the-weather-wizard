@@ -1,0 +1,83 @@
+.weatherOverview {
+    margin: 25px auto;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 50%;
+    box-shadow: 0 0 5px rgb(128, 128, 128);
+    font-family: 'Nanum Myeongjo', serif;
+    position: relative;
+}
+
+.weatherOverviewContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weatherImg {
+    width: 40%;
+}
+.weatherImg img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.weatherDesc{
+    text-align: left;
+    width: 50%;
+}
+.weatherDesc h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+.weatherDesc p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.temprature, .weatherType{
+    color: blue;
+}
+
+
+@media screen and (max-width: 800px) {
+    .weatherOverviewContainer{
+        flex-direction: column;
+    }
+    .temprature{
+        display: block;
+        margin-top: 10px;
+    }
+    .weatherDesc{
+        text-align: center;
+    }
+    .weatherImg {
+        width: 80%;
+    }
+}
+
+.moreDetails{
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.moreDetails:hover{
+    color: blue;
+}
+
+
+@media screen and (max-width: 400px) {
+    .weatherDesc p{
+        font-size: 17px;
+    }
+    .weatherDesc h1{
+        font-size: 25px;
+    }
+}
+
