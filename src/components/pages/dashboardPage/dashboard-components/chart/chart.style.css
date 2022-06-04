@@ -1,29 +1,31 @@
-svg {
-    width: 80%;
-    height: 300px;
-    margin: 60px 30px 30px 120px;
-
+.bar-chart {  
+    background-color: transparent;  
 }
 
-/* g{
-    transform: translate(100px, 20px) !important; 
-
-} */
-.chart-container{
-    display: flex;
-    padding: 20px 30px;
-
+rect{
+  fill: blue;
+  margin-right: 10px;
+  display: inline-block;
+  
 }
 
-.x-axis-container{
-    display: flex;
+
+
+.month-container, .temp-container{
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.bar-container{
-    display: flex;
-    flex-direction: row;
-
+.temp-container{
+  font-size: 15px;
+  justify-content: space-around;
 }
-rect.bar{
-    width: 40px !important;
-} 
+
+
+
+.chart .title{
+  text-align: center;
+  margin-bottom: 30px;
+}
